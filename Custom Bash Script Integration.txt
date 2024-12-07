@@ -1,6 +1,4 @@
 Custom Bash Script Integration
-If you're using a simpler build process or prefer a custom script, here’s how to integrate the ABOUT.txt creation step in a bash script.
-
 Create a Bash Script:
 
 Create a file add_about_file.sh in your project folder.
