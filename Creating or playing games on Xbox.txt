@@ -54,19 +54,8 @@ Some games may have restrictions or specific guidelines for streaming and sharin
 Community Guidelines:
 
 Adhere to Microsoft's Xbox community standards while creating or sharing content.
-Would you like details on a specific requirement, such as technical specifications or software tools?
+Requirement and technical specifications or software tools.    
+A design styles in art, graphics, or architecture:
 
-
-
-
-
-
-You said:
-provide SC50/C50 style
-ChatGPT said:
-ChatGPT
-It seems you're referring to a specific style or model, perhaps related to a product, technology, or game. Could you clarify what "SC50/C50" style refers to? For example:
-
-Are you referring to design styles in art, graphics, or architecture?
 A technical specification or standard?
 A specific product, like a vehicle, gadget, or gaming console
