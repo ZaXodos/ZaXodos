@@ -52,20 +52,6 @@ Include it in the README.md or documentation if publishing on GitHub.
 Embed the copyright text as comments in the header of your source code files for legal protection.
 
 
-
-
-
-
-
-You said:
-code: Recommended Use
-Display this in the About screen of the game.
-Include it in the README.md or documentation if publishing on GitHub.
-Embed the copyright text as comments in the header of your source code files for legal protection.
-ChatGPT said:
-ChatGPT
-Here’s an example of how to implement the recommended uses programmatically in different contexts:
-
 1. Display in the "About" Screen of the Game
 For Unity (C#):
 
