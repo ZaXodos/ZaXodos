@@ -25,17 +25,6 @@ Include it in the "About" or "Credits" section of your software, ideally accessi
 Embed it in source code files as a comment header for added protection.
 Let me know if you want adjustments to this or need additional disclaimers (e.g., open-source contributions, warranty terms, etc.)!
 
-
-
-
-
-
-You said:
-redo the Game name: ZaXodos 
-ChatGPT said:
-ChatGPT
-Here’s the updated copyright statement with the game name changed to ZaXodos:
-
 Copyright Statement
 
 vbnet
@@ -61,7 +50,7 @@ Recommended Use
 Display this in the About screen of the game.
 Include it in the README.md or documentation if publishing on GitHub.
 Embed the copyright text as comments in the header of your source code files for legal protection.
-Let me know if you'd like further customizations!
+
 
 
 
