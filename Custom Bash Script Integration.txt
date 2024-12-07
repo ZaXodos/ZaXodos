@@ -1,0 +1,72 @@
+Custom Bash Script Integration
+If you're using a simpler build process or prefer a custom script, here’s how to integrate the ABOUT.txt creation step in a bash script.
+
+Create a Bash Script:
+
+Create a file add_about_file.sh in your project folder.
+Bash Script Code:
+
+bash
+Copy code
+#!/bin/bash
+
+# Define your build directory
+BUILD_DIR="./Builds/GameBuild"
+ABOUT_FILE="$BUILD_DIR/ABOUT.txt"
+
+# Create the build directory if it doesn't exist
+mkdir -p $BUILD_DIR
+
+# Add the ABOUT file
+cat <<EOT > $ABOUT_FILE
+ZaXodos
+Copyright © 2024 88th Capital and Business Solutions (PTY) Ltd.
+All rights reserved.
+
+Unauthorized reproduction, distribution, or modification of this software
+or its documentation is strictly prohibited.
+
+Contact:
+Email: maseti.oss@outlook.com
+Phone: +27 62 344 3846
+Address: 937 Sompunzi Street, Ginsberg Loc, King William's Town (Qonce) 5601, South Africa.
+EOT
+
+echo "ABOUT file added to build: $ABOUT_FILE"
+How to Use:
+
+After you build your game (or after your build system finishes), run this bash script to add the ABOUT.txt file with the appropriate legal and contact details.
+Testing:
+
+Run the script after your build process to confirm that the ABOUT.txt file is being added to your build output directory.
+Unreal Engine Python Script Integration
+Python Script Setup:
+Save the following Python script as add_about_file.py in your project directory.
+python
+Copy code
+import os
+
+def write_about_file(build_directory):
+    about_file_path = os.path.join(build_directory, "ABOUT.txt")
+    with open(about_file_path, "w") as file:
+        file.write("ZaXodos\n")
+        file.write("Copyright © 2024 88th Capital and Business Solutions (PTY) Ltd.\n")
+        file.write("All rights reserved.\n\n")
+        file.write("Unauthorized reproduction, distribution, or modification of this software\n")
+        file.write("or its documentation is strictly prohibited.\n\n")
+        file.write("Contact:\n")
+        file.write("Email: maseti.oss@outlook.com\n")
+        file.write("Phone: +27 62 344 3846\n")
+        file.write("Address: 937 Sompunzi Street, Ginsberg Loc, King William's Town (Qonce) 5601, South Africa.\n")
+
+# Replace this with your actual build output directory
+build_output_directory = "C:/Your/Build/Output/Directory"
+write_about_file(build_output_directory)
+How to Use:
+
+After building your project in Unreal Engine, run this Python script to automatically add the ABOUT.txt file to your build output.
+Testing:
+
+Run the Python script after your Unreal Engine build finishes to verify the ABOUT.txt file is created in the specified directory.
+Conclusion
+By integrating any of these solutions into your workflow, you can automate the addition of the ABOUT.txt file containing the copyright information and legal notice. Depending on your setup (Unity, GitHub Actions, Bash, or Unreal Engine), follow the instructions to add this process to your build pipeline.

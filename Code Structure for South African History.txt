@@ -1,0 +1,38 @@
+# Define a dictionary to store historical periods and events
+south_africa_history = {
+    "Ancient and Classical Eras": [
+        {"timeframe": "~2.5 Million Years Ago", "event": "Early Human History: Cradle of Humankind"},
+        {"timeframe": "200–1000 CE", "event": "Arrival of Bantu-Speaking Peoples"}
+    ],
+    "Medieval Period": [
+        {"timeframe": "1075–1220", "event": "Rise of Mapungubwe"},
+        {"timeframe": "~1500s", "event": "Zulu and Other Kingdoms"}
+    ],
+    "Renaissance and Early Modern Era": [
+        {"timeframe": "1488", "event": "Portuguese Exploration: Bartolomeu Dias rounds Cape of Good Hope"},
+        {"timeframe": "1652", "event": "Dutch Settlement at the Cape"}
+    ],
+    "Industrial Revolution and Modern Era": [
+        {"timeframe": "1836–1846", "event": "The Great Trek"},
+        {"timeframe": "1815–1840", "event": "The Mfecane/Difaqane"}
+    ],
+    "20th Century": [
+        {"timeframe": "1948–1994", "event": "Apartheid Era"},
+        {"timeframe": "1960", "event": "Sharpeville Massacre"}
+    ],
+    "Contemporary Events": [
+        {"timeframe": "1994", "event": "End of Apartheid"},
+        {"timeframe": "1996–1998", "event": "Truth and Reconciliation Commission"}
+    ]
+}
+
+# Function to display history
+def display_history(history):
+    for period, events in history.items():
+        print(f"{period}:")
+        for event in events:
+            print(f"  - {event['timeframe']}: {event['event']}")
+        print()  # Add a blank line for readability
+
+# Call the function
+display_history(south_africa_history)

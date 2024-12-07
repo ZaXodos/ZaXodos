@@ -1,0 +1,37 @@
+ZaXodos - Game Overview
+ZaXodos is an action-adventure game set in a dynamic, post-apocalyptic world filled with mysteries, ancient technologies, and powerful enemies. Players take on the role of a skilled protagonist navigating a vast, open world to uncover hidden secrets, battle foes, and survive in a harsh environment. Featuring intense combat, rich storytelling, and exploration, ZaXodos offers a unique blend of strategic decision-making and action-packed gameplay.
+
+Key Features:
+Immersive Open World: Explore diverse landscapes, from ruined cities to deep forests, all brought to life with detailed environments.
+Dynamic Combat System: Engage in fast-paced, strategic combat where every move counts. Use a combination of melee, ranged, and special abilities to defeat enemies.
+Character Progression: Develop your character through a detailed skill tree that allows for customization and adaptation to your playstyle.
+Epic Storyline: Unravel the mysteries of ZaXodos as you discover ancient artifacts, secret societies, and uncover the truth behind the world’s downfall.
+Multiple Endings: Your choices throughout the game will influence the narrative, leading to multiple possible endings based on the decisions you make.
+Platforms:
+PC (Windows, macOS)
+Xbox Series X|S and Xbox One
+Installation:
+Clone the repository:
+
+bash
+Copy code
+git clone https://github.com/YourUsername/ZaXodos.git
+Navigate to the project folder:
+
+bash
+Copy code
+cd ZaXodos
+Open the project in your preferred game engine (e.g., Unity or Unreal Engine).
+
+Build the project for your desired platform (PC, Xbox).
+
+Contributing:
+We welcome contributions from developers, designers, and creative minds to help make ZaXodos even better. To contribute, please fork the repository, make your changes, and submit a pull request. Make sure to follow the coding standards and guidelines outlined in our contributing guide.
+
+License:
+This game is licensed under the MIT License.
+
+For more information, feedback, or support, contact us at:
+
+Email: maseti.oss@outlook.com
+Phone: +27 62 344 3846

@@ -1,0 +1,52 @@
+Code Structure for Historical Action-Adventure Themes
+If you're designing a historical action-adventure game or story inspired by real events, you can use this structure:
+
+python
+Copy code
+# Define historical settings with action-adventure focus
+historical_action_adventure = {
+    "Time Periods": {
+        "Ancient and Classical": [
+            {"era": "Ancient Egypt", "themes": "Tomb exploration, pharaoh conspiracies"},
+            {"era": "Roman Empire", "themes": "Gladiator battles, political intrigue"}
+        ],
+        "Medieval": [
+            {"era": "Feudal Japan", "themes": "Samurai honor, ninja stealth missions"},
+            {"era": "European Crusades", "themes": "Knightly quests, holy wars"}
+        ],
+        "Modern": [
+            {"era": "World War II", "themes": "Espionage, resistance movements"},
+            {"era": "Cold War", "themes": "Spy thrillers, covert operations"}
+        ]
+    },
+    "Core Mechanics": {
+        "Combat": ["Swordplay", "Archery", "Stealth takedowns"],
+        "Exploration": ["Open-world maps", "Hidden treasure hunting"],
+        "Story": ["Historical accuracy with fictional twists", "Protagonist personal struggles"]
+    },
+    "Inspirations": [
+        "Assassin's Creed series",
+        "Tomb Raider",
+        "Uncharted"
+    ]
+}
+
+# Function to display historical themes
+def display_historical_themes(themes):
+    for category, details in themes.items():
+        print(f"{category}:")
+        if isinstance(details, list):
+            for item in details:
+                if isinstance(item, dict):
+                    print(f"  - {item['era']}: {item['themes']}")
+                else:
+                    print(f"  - {item}")
+        elif isinstance(details, dict):
+            for subcategory, items in details.items():
+                print(f"  {subcategory}:")
+                for item in items:
+                    print(f"    - {item}")
+        print()  # Blank line for readability
+
+# Call the function
+display_historical_themes(historical_action_adventure)

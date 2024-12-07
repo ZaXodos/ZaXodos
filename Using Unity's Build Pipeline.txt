@@ -1,0 +1,147 @@
+1. Using Unity's Build Pipeline
+In Unity, you can modify the build pipeline using BuildPlayerOptions or add a post-build script to include a file like ABOUT.txt or LICENSE.txt in the final build directory.
+
+Unity Post-Build Script Example:
+
+csharp
+Copy code
+using UnityEditor;
+using UnityEditor.Build;
+using UnityEditor.Build.Reporting;
+using System.IO;
+
+public class PostBuildScript : IPostprocessBuildWithReport
+{
+    public int callbackOrder => 1;
+
+    public void OnPostprocessBuild(BuildReport report)
+    {
+        string buildPath = report.summary.outputPath;
+        string aboutFilePath = Path.Combine(buildPath, "ABOUT.txt");
+
+        string aboutContent = "ZaXodos\n" +
+                              "Copyright © 2024 88th Capital and Business Solutions (PTY) Ltd.\n" +
+                              "All rights reserved.\n\n" +
+                              "Unauthorized reproduction, distribution, or modification of this software\n" +
+                              "or its documentation is strictly prohibited.\n\n" +
+                              "Contact:\n" +
+                              "Email: maseti.oss@outlook.com\n" +
+                              "Phone: +27 62 344 3846\n" +
+                              "Address: 937 Sompunzi Street, Ginsberg Loc, King William's Town (Qonce) 5601, South Africa.";
+
+        // Write the ABOUT file into the build directory
+        File.WriteAllText(aboutFilePath, aboutContent);
+        Debug.Log("ABOUT.txt file added to build: " + aboutFilePath);
+    }
+}
+Save this script in the Assets/Editor folder of your Unity project.
+Every time you build the game, an ABOUT.txt file will be added to the build directory.
+2. Using a CI/CD Pipeline (GitHub Actions Example)
+You can use a CI tool like GitHub Actions to automate appending the ABOUT file during the build process.
+
+GitHub Actions Workflow Example (.github/workflows/build.yml):
+
+yaml
+Copy code
+name: Build Game
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Setup Unity
+      uses: game-ci/unity-builder@v2
+      with:
+        unityVersion: 2023.1.5f1  # Replace with your Unity version
+
+    - name: Build Game
+      uses: game-ci/unity-builder@v2
+      with:
+        projectPath: .
+        buildTarget: StandaloneWindows64
+        outputPath: ./Builds/GameBuild
+
+    - name: Add ABOUT File to Build
+      run: |
+        echo "ZaXodos" > ./Builds/GameBuild/ABOUT.txt
+        echo "Copyright © 2024 88th Capital and Business Solutions (PTY) Ltd." >> ./Builds/GameBuild/ABOUT.txt
+        echo "All rights reserved." >> ./Builds/GameBuild/ABOUT.txt
+        echo "" >> ./Builds/GameBuild/ABOUT.txt
+        echo "Unauthorized reproduction, distribution, or modification of this software" >> ./Builds/GameBuild/ABOUT.txt
+        echo "or its documentation is strictly prohibited." >> ./Builds/GameBuild/ABOUT.txt
+        echo "" >> ./Builds/GameBuild/ABOUT.txt
+        echo "Contact:" >> ./Builds/GameBuild/ABOUT.txt
+        echo "Email: maseti.oss@outlook.com" >> ./Builds/GameBuild/ABOUT.txt
+        echo "Phone: +27 62 344 3846" >> ./Builds/GameBuild/ABOUT.txt
+        echo "Address: 937 Sompunzi Street, Ginsberg Loc, King William's Town (Qonce) 5601, South Africa." >> ./Builds/GameBuild/ABOUT.txt
+
+    - name: Upload Build Artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: ZaXodos-Build
+        path: ./Builds/GameBuild
+3. Adding to Unreal Engine Build Scripts
+Unreal Engine projects can use the PostBuildStep feature in the .uproject file or a custom Python script.
+
+Example Unreal Post-Build Script in Python:
+
+python
+Copy code
+import os
+
+def write_about_file(build_directory):
+    about_file_path = os.path.join(build_directory, "ABOUT.txt")
+    with open(about_file_path, "w") as file:
+        file.write("ZaXodos\n")
+        file.write("Copyright © 2024 88th Capital and Business Solutions (PTY) Ltd.\n")
+        file.write("All rights reserved.\n\n")
+        file.write("Unauthorized reproduction, distribution, or modification of this software\n")
+        file.write("or its documentation is strictly prohibited.\n\n")
+        file.write("Contact:\n")
+        file.write("Email: maseti.oss@outlook.com\n")
+        file.write("Phone: +27 62 344 3846\n")
+        file.write("Address: 937 Sompunzi Street, Ginsberg Loc, King William's Town (Qonce) 5601, South Africa.\n")
+
+# Replace this with your actual build output directory
+build_output_directory = "C:/Your/Build/Output/Directory"
+write_about_file(build_output_directory)
+Add this script to your build pipeline, typically in a post-build event or as part of automation tools like Jenkins.
+4. General Bash Script for Build Automation
+For simpler projects or custom builds:
+
+bash
+Copy code
+#!/bin/bash
+
+BUILD_DIR="./Builds/GameBuild"
+ABOUT_FILE="$BUILD_DIR/ABOUT.txt"
+
+# Create the build directory if it doesn't exist
+mkdir -p $BUILD_DIR
+
+# Add the ABOUT file
+cat <<EOT > $ABOUT_FILE
+ZaXodos
+Copyright © 2024 88th Capital and Business Solutions (PTY) Ltd.
+All rights reserved.
+
+Unauthorized reproduction, distribution, or modification of this software
+or its documentation is strictly prohibited.
+
+Contact:
+Email: maseti.oss@outlook.com
+Phone: +27 62 344 3846
+Address: 937 Sompunzi Street, Ginsberg Loc, King William's Town (Qonce) 5601, South Africa.
+EOT
+
+echo "ABOUT file added to build: $ABOUT_FILE"
+Run this script after your build process to include the ABOUT file in your final output directory.

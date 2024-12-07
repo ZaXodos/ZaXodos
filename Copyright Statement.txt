@@ -1,0 +1,175 @@
+Copyright Statement
+
+vbnet
+Copy code
+Copyright © 2024 88th Capital and Business Solutions (PTY) Ltd.  
+All rights reserved.  
+
+MaseiCTRL, its design, features, and underlying code are proprietary assets of 88th Capital and Business Solutions (PTY) Ltd, trading as 88THCBS-R&D. Unauthorized reproduction, distribution, or modification of this software or its documentation is strictly prohibited and constitutes a violation of applicable laws.  
+
+For licensing inquiries, permissions, or additional information, please contact:  
+Luthando Maseti  
+Email: maseti.oss@outlook.com  
+Phone: +27 62 344 3846  
+
+Address:  
+88th Capital and Business Solutions (PTY) Ltd  
+937 Sompunzi Street  
+Ginsberg Loc, King William's Town (Qonce) 5601  
+South Africa  
+
+This software is protected under South African copyright law and international treaties.  
+Guidelines for Usage
+Add this statement to all public repositories and documentation for MaseiCTRL.
+Include it in the "About" or "Credits" section of your software, ideally accessible from the UI.
+Embed it in source code files as a comment header for added protection.
+Let me know if you want adjustments to this or need additional disclaimers (e.g., open-source contributions, warranty terms, etc.)!
+
+
+
+
+
+
+You said:
+redo the Game name: ZaXodos 
+ChatGPT said:
+ChatGPT
+Here’s the updated copyright statement with the game name changed to ZaXodos:
+
+Copyright Statement
+
+vbnet
+Copy code
+Copyright © 2024 88th Capital and Business Solutions (PTY) Ltd.  
+All rights reserved.  
+
+ZaXodos, its design, features, and underlying code are proprietary assets of 88th Capital and Business Solutions (PTY) Ltd, trading as 88THCBS-R&D. Unauthorized reproduction, distribution, or modification of this software or its documentation is strictly prohibited and constitutes a violation of applicable laws.  
+
+For licensing inquiries, permissions, or additional information, please contact:  
+Luthando Maseti  
+Email: maseti.oss@outlook.com  
+Phone: +27 62 344 3846  
+
+Address:  
+88th Capital and Business Solutions (PTY) Ltd  
+937 Sompunzi Street  
+Ginsberg Loc, King William's Town (Qonce) 5601  
+South Africa  
+
+This software is protected under South African copyright law and international treaties.  
+Recommended Use
+Display this in the About screen of the game.
+Include it in the README.md or documentation if publishing on GitHub.
+Embed the copyright text as comments in the header of your source code files for legal protection.
+Let me know if you'd like further customizations!
+
+
+
+
+
+
+You said:
+code: Recommended Use
+Display this in the About screen of the game.
+Include it in the README.md or documentation if publishing on GitHub.
+Embed the copyright text as comments in the header of your source code files for legal protection.
+ChatGPT said:
+ChatGPT
+Here’s an example of how to implement the recommended uses programmatically in different contexts:
+
+1. Display in the "About" Screen of the Game
+For Unity (C#):
+
+csharp
+Copy code
+using UnityEngine;
+using UnityEngine.UI;
+
+public class AboutScreen : MonoBehaviour
+{
+    public Text aboutText;
+
+    void Start()
+    {
+        aboutText.text = "Copyright © 2024 88th Capital and Business Solutions (PTY) Ltd.\n" +
+                         "All rights reserved.\n\n" +
+                         "ZaXodos, its design, features, and underlying code are proprietary assets of 88th Capital and Business Solutions (PTY) Ltd, trading as 88THCBS-R&D.\n\n" +
+                         "Unauthorized reproduction, distribution, or modification of this software or its documentation is strictly prohibited.\n\n" +
+                         "Contact:\n" +
+                         "Email: maseti.oss@outlook.com\n" +
+                         "Phone: +27 62 344 3846\n" +
+                         "Address: 937 Sompunzi Street, Ginsberg Loc, King William's Town (Qonce) 5601, South Africa.";
+    }
+}
+Attach this script to a UI Text element in the Unity editor.
+
+2. Include in the README.md (Markdown Example)
+For a GitHub repository, add the following to the README.md file:
+
+markdown
+Copy code
+# ZaXodos
+
+**Copyright © 2024 88th Capital and Business Solutions (PTY) Ltd.**  
+All rights reserved.
+
+ZaXodos, its design, features, and underlying code are proprietary assets of 88th Capital and Business Solutions (PTY) Ltd, trading as 88THCBS-R&D. Unauthorized reproduction, distribution, or modification of this software or its documentation is strictly prohibited.
+
+## Contact
+- **Email:** maseti.oss@outlook.com  
+- **Phone:** +27 62 344 3846  
+- **Address:** 937 Sompunzi Street, Ginsberg Loc, King William's Town (Qonce) 5601, South Africa.
+3. Embed in Source Code Files
+Add this copyright notice as a comment at the top of every source code file:
+
+C# Example:
+
+csharp
+Copy code
+// =====================================================
+// ZaXodos
+// Copyright © 2024 88th Capital and Business Solutions (PTY) Ltd.
+// All rights reserved.
+//
+// Unauthorized reproduction, distribution, or modification of this software
+// or its documentation is strictly prohibited.
+//
+// Contact:
+// Email: maseti.oss@outlook.com
+// Phone: +27 62 344 3846
+// Address: 937 Sompunzi Street, Ginsberg Loc, King William's Town (Qonce) 5601, South Africa.
+// =====================================================
+Python Example:
+
+python
+Copy code
+# =====================================================
+# ZaXodos
+# Copyright © 2024 88th Capital and Business Solutions (PTY) Ltd.
+# All rights reserved.
+#
+# Unauthorized reproduction, distribution, or modification of this software
+# or its documentation is strictly prohibited.
+#
+# Contact:
+# Email: maseti.oss@outlook.com
+# Phone: +27 62 344 3846
+# Address: 937 Sompunzi Street, Ginsberg Loc, King William's Town (Qonce) 5601, South Africa.
+# =====================================================
+HTML Example:
+
+html
+Copy code
+<!--
+ZaXodos
+Copyright © 2024 88th Capital and Business Solutions (PTY) Ltd.
+All rights reserved.
+
+Unauthorized reproduction, distribution, or modification of this software
+or its documentation is strictly prohibited.
+
+Contact:
+Email: maseti.oss@outlook.com
+Phone: +27 62 344 3846
+Address: 937 Sompunzi Street, Ginsberg Loc, King William's Town (Qonce) 5601, South Africa.
+-->

@@ -1,0 +1,50 @@
+# Define action-adventure game requirements
+action_adventure_game = {
+    "Core Elements": {
+        "Gameplay": [
+            "Dynamic combat mechanics (e.g., melee, ranged, stealth)",
+            "Exploration of vast, immersive environments",
+            "Challenging puzzles and quests"
+        ],
+        "Storytelling": [
+            "Engaging narrative with emotional depth",
+            "Well-defined protagonists and antagonists",
+            "Branching choices that affect the storyline"
+        ],
+        "Technical Features": [
+            "High-quality graphics and animations",
+            "Realistic physics for character movement and environments",
+            "Interactive NPCs and diverse enemies"
+        ]
+    },
+    "Development Tools": {
+        "Engines": ["Unity", "Unreal Engine", "CryEngine"],
+        "Middleware": ["Havok for physics", "FMOD for audio"],
+        "Version Control": ["Git", "Perforce"]
+    },
+    "Testing": {
+        "Gameplay Testing": [
+            "Combat fluidity",
+            "Exploration intuitiveness",
+            "Puzzle-solving difficulty balance"
+        ],
+        "Performance Testing": [
+            "Frame rate stability",
+            "Load time optimization",
+            "Bug fixing and polish"
+        ]
+    }
+}
+
+# Function to display game development requirements
+def display_game_requirements(game):
+    for category, details in game.items():
+        print(f"{category}:")
+        for subcategory, items in details.items():
+            print(f"  {subcategory}:")
+            for item in items:
+                print(f"    - {item}")
+        print()  # Blank line for readability
+
+# Call the function
+display_game_requirements(action_adventure_game)

@@ -1,0 +1,33 @@
+# Define the requirements as a dictionary
+xbox_game_requirements = {
+    "Players": {
+        "Hardware": ["Xbox Console (Series X/S or One)", "Compatible PC for Game Pass"],
+        "Software": ["Xbox Account", "Xbox Game Pass or Live Gold (optional)"],
+        "Network": ["Internet for online features"],
+        "Peripherals": ["Controller", "Headset (optional)"]
+    },
+    "Developers": {
+        "Accounts": ["Microsoft Developer Account", "ID@Xbox Registration"],
+        "Tools": ["Microsoft Game Development Kit (GDK)", "Unity or Unreal Engine"],
+        "Hardware": ["Xbox Development Kit console", "High-performance PC"],
+        "Certification": ["Xbox Certification Standards compliance"]
+    },
+    "Content Creators": {
+        "Hardware": ["Console or PC", "Capture Card (e.g., Elgato)"],
+        "Software": ["OBS Studio or other streaming software"],
+        "Permissions": ["Adherence to content guidelines"]
+    }
+}
+
+# Function to display requirements
+def display_requirements(requirements):
+    for category, details in requirements.items():
+        print(f"{category}:")
+        for subcategory, items in details.items():
+            print(f"  {subcategory}:")
+            for item in items:
+                print(f"    - {item}")
+        print()  # Add a blank line for readability
+
+# Call the function
+display_requirements(xbox_game_requirements)

@@ -1,0 +1,6 @@
+Options:
+Unity Game Engine: Integration with Unity’s build pipeline.
+Unreal Engine: Automating with Unreal's build or post-build scripts.
+GitHub Actions: Setting up a CI/CD workflow for your project.
+Custom Bash/Python Script: For standalone or simpler automation needs.
+Other Platforms: Let me know your build environment.

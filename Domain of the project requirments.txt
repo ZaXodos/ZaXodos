@@ -1,0 +1,9 @@
+Domain of the project? For example:
+
+Web Application (e.g., Flask/Django, Node.js)
+Game Development (e.g., Unity, Unreal, Python-based games)
+Data Analysis or Machine Learning (e.g., Python, R, TensorFlow)
+Mobile Application (e.g., React Native, Kotlin)
+API Development (e.g., REST or GraphQL APIs)
+Desktop Application (e.g., Electron, PyQt)
+IoT/Embedded Systems
