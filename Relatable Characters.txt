@@ -97,17 +97,6 @@ Ultimately, to make your story more relevant, focus on themes and character arcs
 
 Each decision in your story—whether it's plot, character development, setting, or theme—should be aligned to support the emotional, philosophical, or social core of your narrative. By doing so, you'll ensure your story doesn't just entertain, but resonates and leaves a lasting impression.
 
-
-
-
-
-
-You said:
-code model
-ChatGPT said:
-ChatGPT
-Creating a code model for a high-end Xbox action-adventure game requires planning out the structure, components, and necessary systems that interact with each other. Below is a simplified framework of how the game structure and coding might look for such a game. This includes core systems like gameplay, UI, AI, and event handling.
-
 The structure will be in C#, typically used for game development in Unity, which is commonly used for Xbox game development.
 
 1. Project Structure Overview
@@ -425,15 +414,6 @@ This code structure is just a starting point and should be further refined as yo
 
 When developing for Xbox, ensure the game is optimized for performance. This includes making sure the frame rate remains stable, the game logic is efficient, and all assets (textures, models, sounds) are optimized for console hardware. Additionally, implementing controller input and Xbox Live services can elevate the user experience for Xbox players.
 
-
-
-
-
-
-You said:
-continue
-ChatGPT said:
-ChatGPT
 7. Game Events and Cutscenes
 In an action-adventure game, events and cutscenes can be used to tell the story, introduce plot twists, or create emotional highs and lows. These sequences usually need a dedicated event system that triggers specific actions at certain points during gameplay. Here’s how you can implement it:
 
