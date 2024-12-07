@@ -1,0 +1,45 @@
+// ZaXodos Logo Creation using p5.js
+function setup() {
+  createCanvas(800, 800);
+  background(0); // Set background to black (space theme)
+  
+  // Define glowing colors
+  let glowColor = color(0, 204, 255); // Neon blue
+  let accentColor = color(255, 0, 255); // Neon purple
+  
+  // Draw central glowing circle (emblem)
+  noFill();
+  stroke(glowColor);
+  strokeWeight(10);
+  ellipse(width / 2, height / 2, 400, 400); // Outer circle
+  
+  // Add intricate runes (simple geometric design for effect)
+  stroke(accentColor);
+  strokeWeight(5);
+  line(width / 2 - 50, height / 2, width / 2 + 50, height / 2); // Horizontal line
+  line(width / 2, height / 2 - 50, width / 2, height / 2 + 50); // Vertical line
+  
+  // Draw additional circular inner details
+  ellipse(width / 2, height / 2, 250, 250); // Inner circle
+  ellipse(width / 2, height / 2, 150, 150); // Smaller inner circle
+  
+  // Text for 'ZaXodos'
+  textAlign(CENTER, CENTER);
+  textSize(80);
+  fill(glowColor);
+  textFont('Georgia');
+  text('ZaXodos', width / 2, height - 100);
+  
+  // Create glowing effect (outer glow)
+  drawingContext.shadowBlur = 50;
+  drawingContext.shadowColor = glowColor;
+  
+  // Draw the logo again for a glowing effect
+  textSize(80);
+  fill(accentColor);
+  text('ZaXodos', width / 2, height - 100);
+}
+
+function draw() {
+  // Optional: animate glowing effects here if desired
+}
