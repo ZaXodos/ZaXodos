@@ -33,4 +33,5 @@ Core Mechanics:
   Story:
     - Historical accuracy with fictional twists
     - Protagonist personal struggles
-This approach is modular, allowing you to adapt the structure to any action-adventure theme or game. Would you like to explore specific mechanics or settings in more detail?
+This approach is modular, allowing you to adapt the structure to any action-adventure theme or game.
+Explore specific mechanics or settings in more detail!
